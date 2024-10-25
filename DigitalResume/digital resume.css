@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --mainTextColor-light:#000;
+    --secondaryTextColor-light:rgb(51 51 51);
+    --mainLinkColor-light:#0da2b8;
+    --mainBorderColor-light:rgb(218, 218, 218);
+    --mainBgColor-light:rgb(249, 250,251);
+
+
+    --mainTextColor-dark:#fff;
+    --secondaryTextColor-dark:#adb0b1;
+    --mainLinkColor-dark:rgb(30, 190,214);
+    --mainBorderColor-dark:#2b3031;
+    --mainBgColor-dark:#131415;
+    
+    --mainTextColor:var(--mainTextColor-dark);
+    --secondaryTextColor:var(--secondaryTextColor-light);
+    --mainLinkColor:var(--mainLinkColor-light);
+    --mainBorderColor:var(--mainBorderColor-light);
+    --mainBgColor:var(--mainBgColor-dark);
+
+
+}
+*{
+    font-family:'Readex pro';
+    line-height:1.5em;
+    box-sizing:border-box;
+    color:var(--mainTextColor);
+}
+body{
+    background-color:var(--mainBgColor-dark);
+}
+p,span,li{
+    font-size:1em;
+}
+a{
+    text-decoration:none;
+    color: var(--mainLinkColor-light);
+    font-size:500;
+}
+li{
+    line-height:1.9em;
+}
+#container--main{
+    max-width:700px;
+    margin:0 auto;
+}
+.section--page{
+    padding-top:1em;
+    padding-bottom:1em;
+}
+#wrapper--hero{
+    display:flex;
+    align-items:center;
+    gap:4em;
+}
+#bio,a{
+    font-weight:300;
+}
+
+#user-name{
+    font-size: 48px;
+    line-height: 1em;
+}
+
+#profile-pic{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.social--list{
+    display:flex;
+    justify-content:space-between;
+    column-gap:1em;
+    flex-wrap:wrap;
+}
+.social--list a{
+    font-size:0.9em;
+    transition:0.3s;
+    color: var(--TextColor-light);
+
+}
+
+.social--list a:hover{
+    color: var(--mainLinkColor-light);
+}
+#qualifications--list{
+    list-style: none;
+
+}
+#qualifications--list{
+   border: 1px solid var(--mainBorderColor-dark);
+   padding:30px ;
+}
+
+.card--techstack{
+    padding:0.5em 1em;
+    border-radius:5px;
+    border:1px solid var(--mainBorderColor-light);
+}
+#wrapper--techstack__items{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1em;
+    font-size:0.9em;
+}
+.edu li{
+    list-style: none;
+}
+.edu-text{
+    border: 1px solid var(--mainBorderColor-dark);
+}
+.proj li{
+    list-style: none;
+}
+.proj-text{
+    border: 1px solid var(--mainBorderColor-dark);
+}
+
+
+
+@media (max-width:600px){
+    #wrapper--hero{
+        flex-direction: column;
+        gap:1em;
+    }
+    #profile-pic{
+        width:200px;
+        height:200px;
+    }
+    .section--page{
+        padding-top:1em;
+        padding-bottom:1em;
+    }
+    
+}

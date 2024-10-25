@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>University</title>
+	<link rel="stylesheet" type="text/css" href="University.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body>
+	<section class="sub-header">
+
+		<nav>
+			<a href="index.html"><img src="images/logo.png"></a>
+			<div class="nav-link" id="navLink">
+				<i class="bi bi-x" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="University.html">HOME</a></li>
+					<li><a href="University about.html">ABOUT</a></li>
+					<li><a href="University course.html">COURSE</a></li>
+					<li><a href="University blog.html">BLOG</a></li>
+					<li><a href="University contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<i class="bi bi-list" onclick="showMenu()"></i>
+		</nav>
+		
+		<h1>About Us</h1>
+     </section>
+
+ <!-- about us contact -->
+
+ <section class="about-us">
+ 	<div class="row">
+ 	<div class="about-col">
+ 		<h1>We are the world's largest university</h1>
+ 		<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. At, incidunt, perferendis. Quos expedita totam sapiente perspiciatis ducimus, cum sint neque! Unde eum harum necessitatibus quis cupiditate voluptate recusandae in ut!</p>
+ 		<a href="#" class="hero-btn red-btn">EXPLORE NOW</a>
+ 	</div>
+ 	<div class="about-col">
+ 		<img src="images/about.jpg">
+ </div>
+</div>
+ </section>
+     
+ <!-- footer -->
+
+<section class="footer">
+	<h4>About Us</h4>
+	<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos sunt provident beatae, molestias<br> veritatis unde perspiciatis dolorum porro quo aperiam?</p>
+   <div class="icons">
+   	<i class="bi bi-facebook"></i>
+   	<i class="bi bi-twitter"></i>
+   	<i class="bi bi-instagram"></i>
+   	<i class="bi bi-linkedin"></i>
+   </div>
+	<p>Made With<i class="bi bi-heart"></i>By Easy Tutorials</p>
+</section>
+
+
+
+
+
+
+
+    <!-- javascript -->
+   <script>
+   	var navLink = document.getElementById("navLink");
+   	function showMenu(){
+   		navLink.style.right ="0";
+   	}
+   	function hideMenu(){
+   		navLink.style.right = "-200px";
+   	}
+   </script>
+
+
+</body>
+</html>

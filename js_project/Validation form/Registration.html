@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration form</title>
+	<link rel="stylesheet" type="text/css" href="Registration.css">
+</head>
+<body>
+<div class="abc">
+<section class="container">
+	<header><h2>Register Form</h2></header>
+
+	<form id="form">
+		<div class="input-box" id="em">
+			<h4><label>Full Name</label></h4>
+			<input type="text" placeholder="Enter Your Name" id="name">
+			<span id="error"></span>
+		</div>
+
+		<div class="column1">
+			<div class="input-box">
+				<h4><label>Phone Number</label></h4>
+				<input type="phone" placeholder="Enter Your Phone Number" id="phone">
+				<span id="error1"></span>
+			</div>
+			<div class="input-box">
+				<h4><label>Birth Date</label></h4>
+				<input placeholder="Enter Birth date" type="date" id="date">
+			</div>
+		</div>
+		   <div class="input-box" id="em">
+		   	   <h4><label>Email</label></h4>
+		   	  <input type="email" placeholder="Enter Your email" id="email">
+		   	  <span id="error2"></span>
+		   </div>
+
+		   <div class="pasflx">
+		   <div class="input-box">
+		   	   <h4><label>Password</label></h4>
+		   	  <input type="password" placeholder="Enter Your password" id="password">
+		   	  <img src="eye-close.png" id="eyeicon">
+		   	  <span id="error3"></span>
+		   </div>
+		   <div class="input-box">
+		   	  <h4><label>Confirm password</label></h4>
+		   	 <input type="password" placeholder="confirm password " id="cpassword">
+		   	 <img src="eye-close.png" id="eyei">
+		   	 <span id="error4"></span>
+		   </div>
+         </div>
+
+       <div class="gender-box">
+       	  <h4><label class="ge">Gender</label></h4><br>
+       	  <div class="gender-option">
+       	  	<div class="gender">
+       	  		<input name="gender" id="check-male" type="radio">
+       	  		<label form="check-male">Male</label>
+       	  		<span id="gender_error"></span>
+       	  	</div>
+
+       	  	<div class="gender">
+       	  		<input type="radio" name="gender" id="check-female">
+       	  		<label form="check-female">Female</label>
+       	  		<span id="gender_error"></span>
+       	  	</div>
+       	  	 <div class="gender">
+       	  	 	<input type="radio" name="gender" id="check-other">
+       	  	 	<label form="check-other">prefer not say</label>
+       	  	 	<span id="gender_error"></span>
+       	  	 </div>
+       	  </div>
+       </div>
+
+
+  <!--  <div class="input-box address">
+   	   <label>Address</label>
+   	   <input type="text" name="" placeholder="Enter street address" id="address">
+
+    </div> -->
+   	   <!-- <div class="column"> -->
+   	   	  <div class="select-box">
+   	   	  	 <h4><label>Selection</label><h4><br>
+   	   	  	<select name="" id="state">
+   	   	  		<option value="TS">TS</option>
+   	   	  		<option value="AP">AP</option>
+   	   	  	</select>
+
+   	   	  	<select name="" id="districts"></select>
+   	   	  </div>
+   	   
+   	   <!-- </div> -->
+
+   	     <div class="check-box">
+   	     	<input type="checkbox" id="check"><label>I agree all types of conditions</label>
+   	     	<span id="error5"></span>
+   	     </div>
+   <input type="submit" class="button">
+
+	</form>
+</section>
+</div>
+
+<script src="Registration.js"></script>
+</body>
+</html>

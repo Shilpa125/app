@@ -1,0 +1,130 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+
+}
+
+
+body{
+	display: flex;
+	height:100vh;
+	justify-content: center;
+	align-items: center;
+background: linear-gradient(130deg,#71b7e6, #9b59b6);
+
+}
+
+.container{
+	width: 100%;
+	max-width:700px;
+   background:#fff;
+   padding:25px 30px;
+   border-radius:5px;
+}
+.container .title{
+         font-weight:bold;
+         font-size:25px;
+         position: relative;
+}
+.container .title::before{
+	content:'';
+	position: absolute;
+	left:0;
+	bottom:0;
+	height:3px;
+	width:30px;
+background:linear-gradient(130deg,#71b7e6, #9b59b6);
+ 
+}
+
+.container form .user-details{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	
+
+}
+
+form .user-details .input-box{
+	margin:15px 0px ;
+	width:calc(100%/2 - 20px);
+}
+
+.user-details .input-box .details{
+	display: block;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+
+.user-details .input-box input{
+	height:45px;
+	width:100%;
+	border-radius:5px;
+	border:1px solid #ccc;
+	padding-left:15px;
+	font-size:16px;
+	border-block-width: 2px;
+	transition: all 0.3s ease-in;
+	outline:none;
+	
+}
+
+
+.user-details .input-box input:hover{
+	border-color:#9b59b6;
+}
+
+form .gender-details .gender-title{
+	font-size:20px;
+	font-weight:bold;
+}
+form .gender-details .category{
+	display: flex;
+	width:80%;
+	margin:14px 0;
+	justify-content: space-between;
+}
+
+.gender-details .category label{
+	display: flex;
+	
+}
+
+
+.gender-details .category .dot{
+	height:18px;
+	width:18px;
+   border:5px solid transparent;
+	background-color:#d9d9d9;
+	border-radius:50%;
+	margin-right:10px;
+
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three{
+	background-color:#9b59b6;
+	border-color:#d9d9d9;
+
+}
+form input[type="radio"]{
+	display: none;
+}
+.button input{
+	width:100%;
+	padding:15px 0;
+	font-size: 18px;
+	color: white;
+	background-color:#9b59b6;
+	border:none;
+	border-radius:5px ;
+	margin-top:30px;
+}
+
+
+
+
+
+
+
